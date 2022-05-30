@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+
+.sb-challenge-page-full {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../../src/assets/doingSport.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+
+.sb-event-page-full {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../../src/assets/skateboard.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+
+.sb-challenge-page {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  margin: 20px auto;
+  justify-content: center;
+  min-height: 793px;
+}
+
+.sb-profile-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  max-height: 70px;
+
+  .ms-Button {
+    margin-top: 0;
+    background-color: $secondary-color-blue2;
+    color: white;
+    border-radius: $button-radius;
+  }
+}

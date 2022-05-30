@@ -1,0 +1,129 @@
+@import "../../styles/variables";
+
+.sb-header-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.sb-logo-container {
+  width: 10%;
+  min-width: 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sb-logo {
+  margin-left: 30px;
+  font-size: 50px;
+}
+
+.sb-hamburger-menu {
+  height: 35px;
+  padding: 3px;
+  display: none;
+  cursor: pointer;
+}
+
+.sb-breadcrumb {
+  width: 80%;
+  margin-left: 30px;
+
+  .root-53 {
+    margin: 0;
+  }
+}
+
+.sb-user-info {
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .sb-header-login,
+  .sb-header-register {
+    width: 45%;
+    margin: 0 5px;
+    padding: 0;
+  }
+
+  .sb-profile-picture,
+  .sb-header-logout {
+    height: 42px;
+    font-size: 30px;
+    padding: 0;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+.sb-language-container {
+  display: flex;
+  position: absolute;
+  top: 55px;
+  right: 20px;
+  .sb-language {
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+}
+.sb-user-container {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: $screen-medium) {
+  .sb-header-container {
+    justify-content: space-between;
+  }
+
+  .sb-hamburger-menu {
+    display: block;
+    margin-left: 35px;
+    font-size: 50px;
+    padding: 0;
+  }
+
+  .sb-logo {
+    display: none;
+  }
+
+  .sb-breadcrumb {
+    display: none;
+  }
+}
+
+body {
+  &.light {
+    .sb-header-container {
+      background-color: $secondary-background-light;
+      color: $primary-background-dark;
+      border-bottom: 1px solid rgb(194, 190, 190);
+    }
+  }
+
+  &.dark {
+    .sb-header-container {
+      background-color: $primary-background-dark;
+      color: $secondary-background-light;
+      border-bottom: 1px solid rgb(65, 62, 62);
+    }
+
+    .sb-breadcrumb {
+      .ms-Link {
+        background: transparent;
+        color: $secondary-background-light;
+      }
+      .ms-Breadcrumb-chevron {
+        color: $secondary-background-light;
+      }
+    }
+  }
+}

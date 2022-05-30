@@ -1,0 +1,64 @@
+@import "../../styles/_variables.scss";
+
+.sb-trainer-dashboard-outer {
+  width: 100%;
+  overflow-y: scroll;
+  flex: 1;
+  > ul {
+    margin: 0;
+    padding: 0;
+  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../../src/assets/training.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sb-trainer-dashboard-rating {
+  margin: 0.5em;
+}
+
+.sb-trainer-dashboard-heading {
+  margin-top: 0.5em;
+}
+
+.sb-trainer-dashboard-description {
+  font-weight: bold;
+}
+
+.sb-trainer-dashboard-details-btn {
+  margin: 1em;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px rgb(85, 84, 84);
+}
+
+.sb-trainer-dashboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 710px;
+}
+
+.sb-trainer-dashboard-title {
+  margin-top: 1em;
+  color: $primary-background-light;
+}
+
+.sb-trainer-dashboard-outer {
+  .ms-Icon.root-33.css-97.sb-comment-add-icon {
+    color: $primary-background-light;
+  }
+}
+
+body {
+  &.dark {
+    .sb-activity-update-steps-label {
+      color: $primary-background-light;
+    }
+    .sb-activity-header,
+    .sb-activity-update-btn {
+      box-shadow: 1px 2px 5px #2c2c2c;
+    }
+  }
+}

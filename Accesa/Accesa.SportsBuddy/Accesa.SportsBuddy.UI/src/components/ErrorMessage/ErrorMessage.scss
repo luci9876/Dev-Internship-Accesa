@@ -1,0 +1,26 @@
+
+.sb-error-message-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+.sb-error-message-main {
+    display: flex;
+    align-items: center;
+    text-align: initial;
+    margin-bottom: 30px;
+}
+
+.sb-error-message-response-text{
+    margin-left: 20px;
+    font-size: 2rem;
+}
+
+.sb-error-message-code{
+    font-weight: 700;
+    font-size: 3rem;
+}

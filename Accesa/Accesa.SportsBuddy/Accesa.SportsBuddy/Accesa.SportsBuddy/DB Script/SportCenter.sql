@@ -1,0 +1,28 @@
+USE [SportsBuddyDB]
+GO
+
+/****** Object:  Table [dbo].[SportCenter]    Script Date: 8/17/2021 3:15:51 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[SportCenter](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](max) NOT NULL,
+	[Address] [int] NOT NULL,
+ CONSTRAINT [PK_SportCenter] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[SportCenter]  WITH CHECK ADD  CONSTRAINT [FK_SportCenter_Addresses] FOREIGN KEY([Address])
+REFERENCES [dbo].[Addresses] ([Id])
+GO
+
+ALTER TABLE [dbo].[SportCenter] CHECK CONSTRAINT [FK_SportCenter_Addresses]
+GO
+

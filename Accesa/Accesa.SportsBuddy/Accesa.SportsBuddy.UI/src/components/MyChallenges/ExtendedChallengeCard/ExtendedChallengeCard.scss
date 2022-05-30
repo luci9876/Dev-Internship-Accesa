@@ -1,0 +1,94 @@
+@import '../../../styles/variables';
+
+.sb-extended-challange-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    min-height: 510px;
+    margin: 0 10px 40px 10px;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 6px 1px rgba(78, 78, 78, 0.575);
+    border-radius: $button-radius;
+    p{
+        text-align: start;
+        padding: 0 20px;
+        margin-bottom: 5px;
+    }
+    
+    h2{
+        width:100%;
+        padding: 20px;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        background-color: $secondary-color-blue2;
+        border-radius: $button-radius $button-radius 0 0;
+    }
+
+    strong {
+        margin-right: 5px;
+    }
+    .ms-Button{
+        border-radius: $button-radius;
+    }
+    img{
+        width: 30px;
+    }
+}
+
+.sb-challenge-card-file-upload{
+    margin: 10px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid 2px rgb(139, 139, 139);
+    border-bottom: solid 2px rgb(139, 139, 139);
+    h5{
+        margin-bottom: 10px;
+    }
+    .ms-Button{
+        margin-top:10px;
+    }
+    input{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.sb-challenge-completed{
+    filter: grayscale(100%);
+}
+
+.sb-extended-challenge-buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5px;
+}
+
+
+.sb-extended-challenge-buttons-delete{
+    background-color: rgba(197, 4, 4, 0.822) !important;
+    color:white;
+    &:hover{
+        background-color: rgba(151, 3, 3, 0.822);
+        color:white;
+    }
+}
+
+body {
+    &.light{
+        .sb-extended-challange-card{
+            background-color: $primary-background-light;
+            color: $primary-background-dark;
+        }
+    }
+    &.dark{
+        .sb-extended-challange-card{
+            background-color: $primary-background-dark;
+            color: $primary-background-light;
+        }
+    }
+}

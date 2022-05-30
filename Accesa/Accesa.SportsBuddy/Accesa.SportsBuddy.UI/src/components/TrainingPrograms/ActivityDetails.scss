@@ -1,0 +1,136 @@
+@import "../../styles/_variables.scss";
+
+.sb-activity-full-page{
+  flex:1;
+}
+
+.sb-activity-info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 89vw;
+}
+.sb-activity-info-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sb-activity-info-list {
+  text-align: left;
+  padding: 0;
+  list-style: none;
+  > li {
+    font-size: large;
+  }
+  > li:nth-child(odd) {
+    margin-top: 1em;
+  }
+}
+
+.sb-activity-details {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.sb-activity-header {
+  background-color: $secondary-color-purple1;
+  box-shadow: 1px 2px 5px rgb(189, 188, 188);
+  color: white;
+  position: relative;
+  width: 100.7%;
+}
+
+.sb-activity-steps-outer {
+  min-width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sb-activity-steps-container {
+  width: 100%;
+  background-color: #faf9f9;
+  box-shadow: 1px 2px 5px rgb(189, 188, 188);
+  margin: 1em;
+}
+
+.sb-steps-img {
+  width: 100%;
+}
+
+.sb-steps-text {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  padding: 0.5em;
+}
+
+.sb-activity-steps-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-height: inherit;
+  height: 38vh;
+  position: relative;
+  width: 35%;
+}
+
+.sb-activity-admin-btns {
+  position: absolute;
+  display: flex;
+  top: 0.5em;
+  right: 1em;
+}
+
+@media (max-width: 1320px) {
+  .sb-activity-admin-btns {
+    position: static;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 0.5em;
+  }
+}
+
+.sb-activity-details-heading {
+  margin-top: 0.5em;
+}
+
+.sb-activity-split-elements {
+  display: flex;
+  justify-content: center;
+}
+
+.sb-activity-left-elements {
+  width: 100%;
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 2em;
+}
+
+.sb-activity-start-btn {
+  min-height: 33px;
+  font-size: large;
+  margin-top: 1em;
+  box-shadow: 1px 2px 5px rgb(85, 84, 84);
+}
+
+body {
+  &.dark {
+    .sb-activity-info-section {
+      color: $primary-background-light;
+    }
+    .sb-review {
+      background-color: $primary-background-dark;
+    }
+    .sb-review-comment,
+    .sb-review-user-rating {
+      background-color: $secondary-background-dark;
+    }
+  }
+}

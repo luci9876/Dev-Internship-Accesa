@@ -1,0 +1,29 @@
+USE [SportsBuddyDB]
+GO
+
+/****** Object:  Table [dbo].[Trainers]    Script Date: 8/17/2021 3:43:46 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Trainers](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[IsAvailable] [bit] NULL,
+	[Rating] [decimal](4, 2) NULL,
+	[UserId] [int] NOT NULL,
+ CONSTRAINT [PK_Trainers] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Trainers]  WITH CHECK ADD  CONSTRAINT [FK_Trainers_User] FOREIGN KEY([UserId])
+REFERENCES [dbo].[User] ([Id])
+GO
+
+ALTER TABLE [dbo].[Trainers] CHECK CONSTRAINT [FK_Trainers_User]
+GO
+

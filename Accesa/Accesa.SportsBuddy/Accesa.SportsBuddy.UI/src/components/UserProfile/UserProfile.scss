@@ -1,0 +1,194 @@
+@import "../../styles/variables";
+
+.sb-profile-page {
+  display: flex;
+  height: 100vh;
+}
+
+.sb-user-profile-full {
+  flex: 1;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../../src/assets/woman-running.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sb-user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 833px;
+  margin: 0 auto;
+}
+
+.sb-user-form {
+  max-width: 500px;
+  padding-top: 20px;
+  width: 70%;
+  padding: 15px;
+}
+
+.sb-user-form-name {
+  display: flex;
+  justify-content: space-between;
+
+  .ms-TextField {
+    width: 48%;
+  }
+}
+
+.sb-user-form {
+  .ms-Label {
+    text-align: initial;
+    color: white;
+  }
+}
+
+.ms-TextField-fieldGroup {
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.sb-profile-buttons {
+  margin-top: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+
+  .ms-Button {
+    border-radius: 5px;
+    height: 40px;
+  }
+}
+
+.sb-profile-short {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    border-radius: 100px;
+    width: 120px;
+    padding: 10px;
+    background-color: $primary-background-light;
+  }
+  span {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.sb-profile-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  width: 90%;
+  background-color: white;
+  border-radius: 5px;
+
+  div {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  img {
+    width: 40px;
+    border-radius: 50px;
+    margin-left: 10px;
+  }
+}
+
+.ms-Dropdown-container {
+  label {
+    width: 100%;
+  }
+
+  .ms-Dropdown-title {
+    text-align: initial;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+.sb-user-profile-rating {
+  position: absolute;
+  background-color: $primary-color-blue;
+  padding: 10px;
+  font-size: 20px;
+  right: 15px;
+  bottom: -47px;
+  border-radius: 5px 5px 10px 10px;
+  color: white;
+}
+
+body {
+  &.light {
+    .sb-profile-title {
+      background-color: $secondary-background-light;
+      color: $primary-background-dark;
+    }
+  }
+
+  &.dark {
+    .sb-profile-title {
+      background-color: $primary-background-dark;
+      color: $secondary-background-light;
+      img {
+        background-color: $secondary-background-light;
+        padding: 3px;
+      }
+    }
+    .ms-Label {
+      color: $primary-background-light;
+    }
+    .ms-TextField-field,
+    .ms-Dropdown-title,
+    .ms-TextField-fieldGroup {
+      background-color: $primary-background-dark;
+      color: $primary-background-light;
+      border-radius: 5px;
+    }
+    .ms-TextField-field::placeholder {
+      color: $primary-background-light;
+    }
+    .ms-TextField-reveal:hover {
+      background-color: $primary-background-dark;
+      border-radius: inherit;
+      i {
+        color: $dark-theme-color-1;
+        &:hover {
+          color: $primary-background-light;
+        }
+      }
+    }
+    .ms-Dropdown-title:focus, .dropdown-104:hover .ms-Dropdown-title {
+      color: $primary-background-light;
+    }
+    .dropdown-104:focus .ms-Dropdown-title{
+      color: $primary-background-light;
+    }
+    .ms-TextField-fieldGroup,
+    .ms-Dropdown-caretDownWrapper {
+      i {
+        color: $primary-background-light;
+
+        &:hover {
+          color: $dark-theme-color-1;
+        }
+      }
+    }
+    .ms-Dropdown-titleIsPlaceHolder:hover {
+      color: $dark-theme-color-1;
+    }
+  }
+}

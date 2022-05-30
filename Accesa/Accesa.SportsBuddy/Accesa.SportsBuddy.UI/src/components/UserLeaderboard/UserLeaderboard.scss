@@ -1,0 +1,60 @@
+@import "../../styles/variables";
+
+.sb-user-leaderboard-page-full {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../../src/assets/trophee.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+  flex: 1;
+}
+.sb-user-leaderboard-page {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 80%;
+  min-height: 793px;
+
+  th:nth-child(odd) {
+    background-color: $secondary-color-blue1;
+  }
+
+  th:nth-child(even) {
+    background-color: $secondary-color-purple1;
+  }
+
+  td,
+  th {
+    height: 40px;
+  }
+
+  td:nth-child(odd) {
+    background-color: $secondary-color-blue1-50;
+  }
+
+  td:nth-child(even) {
+    background-color: $secondary-color-blue2-50;
+  }
+}
+
+.sb-user-leaderboard-table {
+  color: white;
+}
+
+.sb-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.sb-leaderboard-rank {
+  height: 30px;
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accesa.SportsBuddy", "Accesa.SportsBuddy\Accesa.SportsBuddy.csproj", "{BFFFFEE5-7F2C-4FFD-BF10-3B0DC806B31D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accesa.SportsBuddyUnitTests", "Accesa.SportsBuddyUnitTests\Accesa.SportsBuddyUnitTests.csproj", "{94BF3273-ACBA-457E-8021-3F729EC78F29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFFFFEE5-7F2C-4FFD-BF10-3B0DC806B31D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFFFEE5-7F2C-4FFD-BF10-3B0DC806B31D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFFFEE5-7F2C-4FFD-BF10-3B0DC806B31D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFFFEE5-7F2C-4FFD-BF10-3B0DC806B31D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94BF3273-ACBA-457E-8021-3F729EC78F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94BF3273-ACBA-457E-8021-3F729EC78F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94BF3273-ACBA-457E-8021-3F729EC78F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94BF3273-ACBA-457E-8021-3F729EC78F29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4CD1359-91D1-4E67-B968-9F0086F004BB}
+	EndGlobalSection
+EndGlobal

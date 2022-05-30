@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+
+#theme-toggle {
+  border: none;
+  outline: none;
+  font-size: 35px;
+  background: transparent;
+}
+
+#theme-toggle {
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+body {
+  &.light {
+    #theme-toggle {
+      color: $primary-background-dark;
+    }
+  }
+  &.dark {
+    #theme-toggle {
+      color: gold;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../../styles/variables";
+
+.sb-landing-container-full{
+  width: 100%;
+  overflow-y: scroll;
+  flex: 1;
+}
+.sb-landing-container {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../../assets/background-landing.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex:1;
+  height: 100%;
+
+  .sb-suggested-title,
+  .sb-login-inputs,
+  .sb-register-option {
+    color: white;
+  }
+
+  .sb-login-container {
+    background-color: white;
+  }
+
+  .sb-login-labels {
+    color: white;
+  }
+
+  // .sb-login-btn {
+  //   height: 60px;
+  // }
+}
+
+.sb-landing-titlearea {
+  width: 100%;
+  height: fit-content;
+  padding: 0 15%;
+  color: white;
+  font-weight: 500;
+
+  h1 {
+    margin: 20px;
+
+  }
+  p {
+    margin: 5px;
+    word-spacing: 3px;
+  }
+
+  > :last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.sb-user-main-page {
+  background-color: transparent;
+  color: white;
+
+}
+
+#sb-login-invite {
+  color: white;
+  margin-top: 10px;
+  font-weight: 600;
+}

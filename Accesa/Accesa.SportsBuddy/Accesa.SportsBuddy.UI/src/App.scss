@@ -1,0 +1,49 @@
+@import "~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss";
+@import "./styles/variables";
+@import "./styles/globals.scss";
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Content {
+  display: flex;
+  height: 100vh;
+}
+
+.sb-router {
+  margin-top: 60px;
+  width: 91%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: $screen-medium) {
+  .sb-navigation.hidden {
+    display: none;
+  }
+  .sb-router {
+    width: 100%;
+    margin: 60px 0 0 0 ;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+body {
+  &.light{
+    .App{
+      background-color: $primary-background-light;
+    }
+  }
+  &.dark{
+    .App{
+      background-color: $secondary-background-dark;
+    }
+  }
+}

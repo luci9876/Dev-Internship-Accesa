@@ -1,0 +1,53 @@
+@import '../../styles/variables';
+
+.sb-my-challenges-control-page{
+    padding-bottom: 50px;
+    width: 100%;
+    min-height: 833px;
+    overflow-y: scroll;
+}
+
+.sb-my-challenges-page{
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+.sb-profile-title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+    .ms-Button{
+        margin-top: 0;
+        background-color: $secondary-color-blue2;
+        color: white;
+        border-radius: $button-radius;
+    }
+
+    .sb-my-chellenges-create-btn{
+        margin-right: 20px;
+        background-color: white;
+        color: $secondary-color-blue2;
+        border: 2px solid $secondary-color-blue2;
+
+        .ms-Button-label{
+            font-weight: bold;
+        }
+    }
+}
+
+.sb-my-challenges-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
